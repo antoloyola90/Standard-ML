@@ -1,0 +1,48 @@
+
+<TITLE>Installing SML/NJ</TITLE>
+
+<H3>Installing Standard ML of New Jersey (SML/NJ)<br><br></h3>
+<p><b>Mac OS X</b>
+<ol>
+<li> Navigate to <a href="http://smlnj.org/dist/working/110.77/index.html">http://smlnj.org/dist/working/110.77/index.html</a>.
+<li> In the section that says "MacOS X", click on the link to "smlnj-x86-110.77.pkg". That file will be downloaded.
+<li> On your computer (in the folder into which the file was downloaded), double-click on the
+downloaded file (smlnj-x86-110.77.pkg). Follow the instructions, accepting the default settings 
+as you go.
+<li> The sml executable is /usr/local/smlnj/bin/sml .  If you include "/usr/local/smlnj/bin" in your PATH environment variable, you can just type "sml" in a shell to run it.  Alternatively, in your .bashrc file, you can put "alias sml=/usr/local/smlnj/bin/sml", in which case you can also type "sml" in a shell to run it.
+<li> To exit the SML interpreter, type control-D.
+</ol>
+
+<p><b>Cygwin on Windows</b>
+<ol>
+<li> Navigate to <a href="http://smlnj.org/dist/working/110.77/index.html">http://smlnj.org/dist/working/110.77/index.html</a>.
+<li> In the section that says "Microsoft Windows", click on the link to "smlnj-110.77.msi" to download the installation package.
+<li> In the same web page in the same section, click on the "WININSTALL" link and read the instructions.
+<li> On your computer (in the directory in which the file was downloaded), double-click on the
+downloaded file (smlnj-110.77.msi) to perform the installation process.
+<li> The sml.bat file, which invokes the SML interpreter, is in c:/Program Files/SMLNJ/bin. When you run cygwin, this directory should already be in your path.  To run the SML interpreter, type "sml.bat".  Alternatively, put the line "alias sml=sml.bat" in your .bashrc file and then subsequently just type "sml".
+<li> To exit the SML interpreter: type control-Z, then enter.
+</ol>
+
+<p><b>Linux</b>
+<ol>
+<li> Navigate to <a href="http://smlnj.org/dist/working/110.77/index.html">http://smlnj.org/dist/working/110.77/index.html</a>.
+<li> Follow the instructions in the "Unix" section on near the top of the page, and click on 
+the link that says "config.tgz" to download that file. Put the file in a directory where
+you will want SML to be installed (you can do it under your home directory or in
+/usr/local/smlnj, or example).
+<li> In a shell, in the directory you downloaded the file to, unpack the file by typing "tar -xzvf config.tgz", and then type 
+"config/install.sh". 
+<ul>
+<li> If you are running a 64-bit version of Linux, you may get an error message about
+SML requiring 32-bit support. In this case, click on the link in the above web page 
+(in the same section) that says "INSTALL" and scroll down to the instructions
+under the heading "3.2. The install fails with a message about 32-bit support".
+</ul>
+<li> Once it is installed, either make sure the bin/ subdirectory under whatever directory
+you've installed SML into (e.g. /usr/local/smlnj), is in your PATH.
+<li> To invoke the SML interpreter in a shell, type "sml".
+<li> To exit the SML interpreter, type control-D.
+</ol>
+
+
